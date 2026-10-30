@@ -1,0 +1,20 @@
+{
+  "name": "desahub-backend-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend REST API Express.js dan PostgreSQL untuk pengelolaan kegiatan desa",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node --check src/server.js && node --check src/app.js && node --check src/db.js && node --check src/routes/activities.js && node --check src/middleware/errorHandler.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.3"
+  }
+}
